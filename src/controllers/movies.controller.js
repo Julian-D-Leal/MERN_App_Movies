@@ -30,12 +30,12 @@ export const addMovie =  async(req, res) => {
             date: req.body.date,
             actors: req.body.actors,
             genres: req.body.genres,
+            url: req.body.url,
             image: {
                 data: fs.readFileSync("uploads/" + req.file.filename),
                 contentType: 'image/png'
             }
         });
-        console.log(add)
         await add.save();
         res.send("Guardado con éxito")
     } catch (error) {
@@ -67,6 +67,7 @@ export const updateMovie = async(req, res) => {
             date: req.body.date,
             actors: req.body.actors,
             genres: req.body.genres,
+            url: req.body.url,
             image: {
                 data: fs.readFileSync("uploads/" + req.file.filename),
                 contentType: 'image/png'

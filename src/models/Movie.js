@@ -18,6 +18,7 @@ const movieSchema = new Schema({
     },
     actors: [{type: String, required: true}],
     genres: [String],
+    url : String,
     image: {
         data: Buffer,
         contentType: String
