@@ -1,10 +1,6 @@
-### ApiRest Movies y Página web de informacíon de peliculas
+### ApiRest Movies
 
-### npm modules ReactJS
-
-npm i axios reactstrap react-bootstrap bootstrap 
-
-### Enviroment variables nodejs
+## Enviroment variables nodejs
 
 MONGODB_URI \
 PORT
@@ -17,4 +13,5 @@ npm i dotenv \
 npm install cors
 
 ### scripts Nodejs-Express
+
 "start": "nodemon src/index.js --exec babel-node"
